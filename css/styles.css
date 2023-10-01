@@ -1,2 +1,68 @@
 /* font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif; */
+
+body {
+  background: #ece9e6;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.header-indent {
+  text-indent: 45px;
+}
+
+.hero {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.hero h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0 0 45px;
+}
+
+.contact-button {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgb(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  line-height: 1.25;
+  margin: 20px 0 0 45px;
+  padding: 13px 23px;
+  text-decoration: none;
+  transition: all 250ms;
+}
+
+.contact-button:hover {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: #8b8581;
+}
+
+.home-content {
+  place-self: center;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+@media (min-width: 576px) {
+  .home-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
