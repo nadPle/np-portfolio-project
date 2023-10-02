@@ -1,8 +1,9 @@
-/* font-family: 'Merriweather', serif;
-font-family: 'Roboto', sans-serif; */
+:root {
+  --page-background-color: #ece9e6;
+}
 
 body {
-  background: #ece9e6;
+  background: var(--page-background-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -17,29 +18,29 @@ h1 {
 }
 
 .hero {
-  margin: 150px 50px 100px 50px;
+  padding: 100px 50px;
 }
 
 .hero h2 {
   font-size: 18px;
   font-weight: 400;
-  margin: 40px 0 0 45px;
+  margin: 40px 0 40px 45px;
 }
 
 .contact-button {
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(82, 82, 82, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: rgb(0, 0, 0, 0.8);
+  color: rgb(89, 64, 75);
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   display: block;
   line-height: 1.25;
-  margin: 20px 0 0 45px;
-  padding: 13px 23px;
+  margin: 0 auto;
+  padding: 15px 50px;
   text-decoration: none;
   transition: all 250ms;
 }
@@ -47,17 +48,17 @@ h1 {
 .contact-button:hover {
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: #8b8581;
-}
-
-.home-content {
-  place-self: center;
+  color: rgba(89, 64, 75, 0.6);
 }
 
 .home-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
+}
+
+.home-content {
+  place-self: center;
 }
 
 @media (max-width: 576px) {
@@ -78,7 +79,7 @@ h1 {
 
   .hero h2 {
     text-align: center;
-    margin: 0;
+    margin: 0 0 20px 0;
     font-size: 16px;
   }
 
