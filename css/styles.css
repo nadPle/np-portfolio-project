@@ -1,9 +1,9 @@
 :root {
-  --page-background-color: #ece9e6;
+  --top-background-color: #ece9e6;
+  /* --bottom-background-color: #f7f3ef; */
 }
 
 body {
-  background: var(--page-background-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,7 +18,8 @@ h1 {
 }
 
 .hero {
-  padding: 100px 50px;
+  padding: 130px 50px;
+  background: var(--top-background-color);
 }
 
 .hero h2 {
@@ -61,6 +62,33 @@ h1 {
   place-self: center;
 }
 
+.middle-part {
+  padding-top: 100px;
+  /* background-color: var(--bottom-background-color); */
+}
+
+.middle-header {
+  height: 1px;
+  background: rgb(89, 64, 75);
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.middle-header h3 {
+  display: block;
+  text-align: center;
+  background: #ffffff;
+  position: absolute;
+  top: -0.8rem;
+  left: 50%;
+  margin-left: -160px;
+  width: 250px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
 @media (max-width: 576px) {
   .home-content:nth-of-type(2) {
     grid-row: 1;
@@ -89,7 +117,26 @@ h1 {
 }
 
 @media (min-width: 576px) {
+  .hero {
+    padding-left: 80px;
+  }
   .home-container {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.brand-text {
+  font-size: 16px;
+  font-weight: 200;
+  opacity: 0.7;
+}
+
+.nav-background {
+  background-color: var(--top-background-color) !important;
+}
+
+.nav-underline {
+  border-bottom: rgb(89, 64, 75) solid 2.5px;
+  width: 55px;
+  padding-left: 15px;
 }
