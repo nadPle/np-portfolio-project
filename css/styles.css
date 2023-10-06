@@ -1,10 +1,12 @@
 :root {
   --top-background-color: #ece9e6;
+  --item-color: rgb(89, 64, 75);
   /* --bottom-background-color: #f7f3ef; */
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  margin-bottom: 100px;
 }
 
 h1 {
@@ -34,7 +36,7 @@ h1 {
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: rgb(89, 64, 75);
+  color: var(--item-color);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -69,7 +71,7 @@ h1 {
 
 .middle-header {
   height: 1px;
-  background: rgb(89, 64, 75);
+  background: var(--item-color);
   margin-bottom: 80px;
   position: relative;
 }
@@ -81,7 +83,7 @@ h1 {
   position: absolute;
   top: -0.8rem;
   left: 50%;
-  margin-left: -160px;
+  margin-left: -125px;
   width: 250px;
   font-size: 18px;
   font-weight: 400;
@@ -136,7 +138,32 @@ h1 {
 }
 
 .nav-underline {
-  border-bottom: rgb(89, 64, 75) solid 2.5px;
+  border-bottom: var(--item-color) solid 2.5px;
   width: 55px;
   padding-left: 15px;
+}
+
+.project-row img {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-title {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-title h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-project {
+  background-color: var(--item-color);
+  color: white;
+}
+
+.card {
+  margin: 0 auto;
 }
