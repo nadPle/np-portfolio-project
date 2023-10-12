@@ -4,14 +4,14 @@
 }
 
 body {
-  margin-bottom: 100px;
   font-family: "Figtree", sans-serif;
+  margin-bottom: 100px;
 }
 
 h1 {
   font-family: "Merriweather", serif;
-  font-weight: bold;
   font-size: 85px;
+  font-weight: bold;
 }
 
 .brand-text {
@@ -20,47 +20,57 @@ h1 {
   opacity: 0.7;
 }
 
-.nav-background {
-  background-color: var(--top-background-color) !important;
+.button-mail {
+  border: 4px solid #5f7884;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.nav-underline {
-  border-bottom: var(--item-color) solid 2.5px;
-  padding-left: 8px;
+.button-mail:hover,
+.button-mail:first-child:active {
+  border: 4px solid #5f7884;
 }
 
-.header-indent {
-  text-indent: 45px;
+.button-linkedin {
+  border: 4px solid var(--item-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.hero {
-  padding-top: 130px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 100px;
-  background: var(--top-background-color);
+.button-linkedin:hover,
+.button-linkedin:first-child:active {
+  border: 4px solid var(--item-color);
 }
 
-.hero h2 {
+.button .btn-project {
+  background-color: var(--item-color);
+  color: white;
+  margin-top: 10px;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+.card-title {
   font-size: 18px;
-  font-weight: 400;
-  margin: 30px 0 40px 45px;
 }
 
 .contact-button {
   background-color: #ffffff;
   border: 1px solid rgba(82, 82, 82, 0.3);
-  box-sizing: border-box;
   border-radius: 4px;
-  max-width: fit-content;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
   color: var(--item-color);
   cursor: pointer;
+  display: block;
   font-size: 16px;
   font-weight: 600;
-  display: block;
   line-height: 1.25;
   margin: 0 auto;
+  max-width: fit-content;
   padding: 15px 50px;
   text-decoration: none;
   transition: all 250ms;
@@ -75,24 +85,47 @@ h1 {
 .contact-icons {
   font-size: 18px;
   font-weight: 600;
-  margin: 30px 0 40px 45px;
+  margin: 30px 0 10px 45px;
   padding: 0;
 }
 
-.mailto {
-  text-decoration: none;
-  color: #5f7884;
+.footer-container {
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+.header-indent {
+  text-indent: 45px;
+}
+
+.hero {
+  background: var(--top-background-color);
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 130px;
+}
+
+.hero h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 30px 0 40px 45px;
 }
 
 .linkedin {
-  text-decoration: none;
   color: #59404b;
+  text-decoration: none;
+}
+
+.mailto {
+  color: #5f7884;
+  text-decoration: none;
 }
 
 .main-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .main-content {
@@ -108,44 +141,34 @@ h1 {
 }
 
 .middle-header {
-  height: 1px;
   background: var(--item-color);
+  height: 1px;
   margin-bottom: 80px;
   position: relative;
 }
 
 .middle-header h3 {
-  display: block;
-  text-align: center;
   background: #ffffff;
-  position: absolute;
-  top: -0.8rem;
-  left: 50%;
-  margin-left: -125px;
-  width: 250px;
+  display: block;
   font-size: 16px;
   font-weight: 400;
-  text-transform: uppercase;
+  left: 50%;
   letter-spacing: 0.1rem;
+  margin-left: -125px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -0.8rem;
+  width: 250px;
 }
 
-.card {
-  margin: 0 auto;
+.nav-background {
+  background-color: var(--top-background-color) !important;
 }
 
-.card-title {
-  font-size: 18px;
-}
-
-.btn-project {
-  background-color: var(--item-color);
-  color: white;
-  margin-top: 10px;
-}
-
-.footer-container {
-  margin-top: 40px;
-  opacity: 0.8;
+.nav-underline {
+  border-bottom: var(--item-color) solid 2.5px;
+  padding-left: 8px;
 }
 
 @media (max-width: 576px) {
@@ -158,16 +181,16 @@ h1 {
   }
 
   h1 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
     font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
   }
 
   .hero h2 {
-    text-align: center;
-    margin: 0 0 20px 0;
     font-size: 16px;
+    margin: 0 0 20px 0;
+    text-align: center;
   }
 
   .contact-button {
@@ -179,8 +202,8 @@ h1 {
   }
 
   .contact-icons {
-    margin: 0;
-    text-align: center;
+    margin: 0 0 20px 0;
+    text-align: left;
   }
 }
 
