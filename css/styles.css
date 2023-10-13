@@ -5,7 +5,27 @@
 
 body {
   font-family: "Figtree", sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer p {
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+footer .contact-box {
+  background-color: var(--top-background-color);
+  padding: 30px 100px;
+  margin-bottom: 50px;
+}
+
+footer .contact-box h5 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
 }
 
 h1 {
@@ -91,7 +111,21 @@ h1 {
 
 .footer-container {
   margin-top: 40px;
+  text-align: center;
+}
+
+.footer-icons {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.footer-icons a {
   opacity: 0.8;
+}
+
+.footer-icons a:hover {
+  opacity: 1;
+  transition: all 100ms ease-in-out;
 }
 
 .header-indent {
