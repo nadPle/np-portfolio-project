@@ -9,29 +9,27 @@ body {
 }
 
 footer {
+  margin-bottom: 40px;
   margin-top: 100px;
-}
-
-footer p {
-  margin-bottom: 0;
-  opacity: 0.8;
-}
-
-footer .contact-box {
-  background-color: var(--top-background-color);
-  padding: 30px 100px;
-  margin-bottom: 50px;
-}
-
-footer .contact-box h5 {
-  font-family: "Merriweather", serif;
-  font-size: 50px;
 }
 
 h1 {
   font-family: "Merriweather", serif;
   font-size: 85px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 30px 0 40px 45px;
+}
+
+h5 {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 0;
 }
 
 .brand-text {
@@ -110,13 +108,18 @@ h1 {
 }
 
 .footer-container {
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+.footer-copyright {
   text-align: center;
+  opacity: 0.8;
 }
 
 .footer-icons {
   font-size: 30px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .footer-icons a {
@@ -140,18 +143,28 @@ h1 {
   padding-top: 130px;
 }
 
-.hero h2 {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 30px 0 40px 45px;
+.inquiry-box {
+  display: grid;
+  align-items: center;
+  background-color: var(--top-background-color);
+  padding: 40px 100px;
+  margin-bottom: 50px;
 }
 
-.linkedin {
+.inquiry-content {
+  place-self: center;
+}
+
+.inquiry-content p {
+  margin: 0;
+}
+
+.link-linkedin {
   color: #59404b;
   text-decoration: none;
 }
 
-.mailto {
+.link-mailto {
   color: #5f7884;
   text-decoration: none;
 }
@@ -221,14 +234,48 @@ h1 {
     text-align: center;
   }
 
-  .hero h2 {
+  h2 {
     font-size: 16px;
     margin: 0 0 20px 0;
     text-align: center;
   }
 
   .contact-button {
+    padding: 15px 25px;
     margin: 0 auto;
+  }
+
+  .footer-container {
+    margin-top: 0;
+  }
+
+  .inquiry-box {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    place-self: center;
+    text-align: center;
+    padding: 30px 25px;
+  }
+
+  .inquiry-box h5 {
+    font-size: 40px;
+  }
+
+  .inquiry-content {
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  .inquiry-content p {
+    text-align: center;
+  }
+
+  .main-content:nth-of-type(2) {
+    grid-row: 1;
+  }
+
+  .header-indent {
+    text-indent: 0;
   }
 
   .main-content {
@@ -242,6 +289,10 @@ h1 {
 }
 
 @media (min-width: 576px) {
+  .inquiry-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .hero {
     padding-left: 80px;
   }
