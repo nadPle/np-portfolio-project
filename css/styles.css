@@ -64,6 +64,7 @@ h5 {
   background-color: var(--item-color);
   color: white;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .card {
